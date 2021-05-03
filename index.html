@@ -22,8 +22,9 @@
             var content = document.getElementById("jasoseo").value;
             if(content.length > 200) {
                 content = content.substring(0,200);
-                document.getElementById("counter").innerHTML = '(' + content.length + '/200)';
+                document.getElementById('jasoseo').value = content;
             }
+            document.getElementById("counter").innerHTML = '(' + content.length + '/200)';
         }
     </script>
 </body>
